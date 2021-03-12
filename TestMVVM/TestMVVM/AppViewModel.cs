@@ -19,7 +19,8 @@ namespace TestMVVM
                // new Customer("Купить корм собаке", new DateTime(2020, 5, 12, 13, 10, 0), 3), // Year, day, mont, hour, minute, seconds
                 new Customer("Заменить проездной", 3),
                 new Customer("Купить корм собаке", 2),
-                new Customer("Купить корм собаке", 1)
+                new Customer("Купить корм собаке", 1),
+                new Customer("Купить корм собаке", 2)
             };
         }
 
