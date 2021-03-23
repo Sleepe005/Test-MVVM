@@ -41,7 +41,7 @@ namespace TestMVVM
                 // Если назначено время, то возвращаем date, если нет, то "без времени"
                 if (HaveDate)
                 {
-                    return $"{this.date.Day}.{this.date.Month}-{this.date.Hour}:{this.date.Minute}";
+                    return $"{this.date.Day}.{this.date.Month} до {this.date.Hour}:{this.date.Minute}";
                 }
                 else
                 {
@@ -64,7 +64,7 @@ namespace TestMVVM
             }
         }
 
-
+    
         public string Color
         {
             get

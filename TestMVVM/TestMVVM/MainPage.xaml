@@ -4,16 +4,22 @@
              xmlns:local="clr-namespace:TestMVVM"
              x:Class="TestMVVM.MainPage">
 
-    
+    <ContentPage.BindingContext>
+        <local:AppViewModel/>
+    </ContentPage.BindingContext>
     
     <ContentPage.Content>
         <ListView ItemsSource="{Binding Customers}">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <StackLayout>
-                        <Label Text="{Binding Name}"  TextColor="Black"/>
-                        <Label Text="{Binding dateToString}"  TextColor="Black"/>
-                    </StackLayout>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <StackLayout>
+                                <Label Text="{Binding Name}" TextColor="{Binding Color}" FontSize="20" />
+                                <Label Text="{Binding dateToString}" TextColor="{Binding Color}" FontSize="20"/>
+                            </StackLayout>
+                        </ViewCell.View>
+                    </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>

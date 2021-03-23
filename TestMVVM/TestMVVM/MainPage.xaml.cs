@@ -10,16 +10,10 @@ namespace TestMVVM
    
     public partial class MainPage : ContentPage
     {
-        //AppViewModel viewModel;
 
         public MainPage()
         {
-            InitializeComponent();
-
-           // viewModel = new AppViewModel();
-           BindingContext = new AppViewModel();
-
-          
+           InitializeComponent();
 
         }
     }
